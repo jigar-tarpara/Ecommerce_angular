@@ -2,9 +2,9 @@
 .tmp
 .git
 node_modules
-bower_components
-../.idea/
-../npm-debug.log
+vendor
+/.idea
+/npm-debug.log
 .settings
 *.log
 dist/

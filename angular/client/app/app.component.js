@@ -1,8 +1,16 @@
 import template from './app.html';
 
-let appComponent = {
+module.exports = {
+  controllerAs: 'vm',
+  restrict: 'E',
+  bindings: {},
   template,
-  restrict: 'E'
+  controller:appController
 };
 
-export default appComponent;
+appController.$inject=[];
+
+function appController(){
+  let vm=this;
+  vm.name='App';
+}

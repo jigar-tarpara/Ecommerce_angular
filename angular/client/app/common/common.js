@@ -1,11 +1,5 @@
-import angular from 'angular';
-import Navbar from './navbar/navbar';
-import Footer from './footer/footer';
-let commonModule = angular.module('app.common', [
-  Navbar,
-  Footer
-])
+module.exports='common';
 
-.name;
-
-export default commonModule;
+angular.module('common',[])
+  .component('navBar',require('./navBar/navBar.component'))
+  .component('fooTer',require('./footer/footer.component'));

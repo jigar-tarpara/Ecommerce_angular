@@ -1,11 +1,13 @@
 import template from './footer.html';
-import controller from './footer.controller';
-
-let footerComponent = {
+module.exports = {
+  controllerAs: 'vm',
   restrict: 'E',
   bindings: {},
   template,
-  controller
+  controller:footerController
 };
-
-export default footerComponent;
+footerController.$inject=[];
+function footerController(){
+  let vm=this;
+  vm.name='footer';
+}

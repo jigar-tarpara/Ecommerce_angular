@@ -1,11 +1,13 @@
 import template from './home.html';
-import controller from './home.controller';
-
-let homeComponent = {
+module.exports = {
+  controllerAs: 'vm',
   restrict: 'E',
   bindings: {},
   template,
-  controller
+  controller:homeController
 };
-
-export default homeComponent;
+homeController.$inject=[];
+function homeController(){
+  let vm=this;
+  vm.name='home';
+}
