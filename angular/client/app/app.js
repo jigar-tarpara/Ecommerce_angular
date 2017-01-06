@@ -1,9 +1,21 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import 'normalize.css';
+import lodash from 'lodash';
+import jQuery from 'jquery';
+import angularUiBootstrap from 'angular-ui-bootstrap';
+import ngMaterial from 'angular-material';
+import ngArea from 'angular-aria';
+import ngAnimate from 'angular-animate';
+
 
 angular.module('app', [
   uiRouter,
+  angularUiBootstrap,
+  ngMaterial,
+  ngArea,
+  ngAnimate,
+
+  require("./storage/storage"),
   require('./common/common'),
   require('./components/components')
 ])

@@ -8,9 +8,10 @@ module.exports = {
   controller:appController
 };
 
-appController.$inject=[];
+appController.$inject=["$window"];
 
-function appController(){
+function appController($window){
   let vm=this;
   vm.name='App';
+  $window.localStorage.cartItems="";
 }
