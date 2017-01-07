@@ -1,20 +1,20 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import lodash from 'lodash';
-import jQuery from 'jquery';
 import angularUiBootstrap from 'angular-ui-bootstrap';
-import ngMaterial from 'angular-material';
-import ngArea from 'angular-aria';
-import ngAnimate from 'angular-animate';
+import 'angular-material';
+import 'angular-aria';
+import 'angular-animate';
+import 'angular-toastr';
 
 
 angular.module('app', [
   uiRouter,
   angularUiBootstrap,
-  ngMaterial,
-  ngArea,
-  ngAnimate,
-
+  'ngMaterial',
+  'ngAria',
+  'ngAnimate',
+  'toastr',
   require("./storage/storage"),
   require('./common/common'),
   require('./components/components')

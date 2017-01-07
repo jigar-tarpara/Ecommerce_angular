@@ -23,7 +23,7 @@
           <tbody>
           <tr ng-repeat="item in vm.products track by item.id">
             <td class="cart_product">
-              <a href=""><img height="110" width="110" ng-src="../../../assets/images/home/{{item.image}}" alt=""></a>
+              <a href=""><img height="110" width="110" ng-src="/img/home/{{item.image}}" alt=""></a>
             </td>
             <td class="cart_description">
               <h4><a href="">{{item.name}}</a></h4>
@@ -43,7 +43,7 @@
               <p class="cart_total_price">{{ vm.quantity[item.id] * item.amount }}</p>
             </td>
             <td class="cart_delete">
-              <a class="cart_quantity_delete" ng-click="vm.deleteItem(item.id);" href="#" ><i class="fa fa-times"></i></a>
+              <a class="cart_quantity_delete" ng-click="vm.deleteItem(item.id);" ><i class="fa fa-times"></i></a>
             </td>
           </tr>
           </tbody>

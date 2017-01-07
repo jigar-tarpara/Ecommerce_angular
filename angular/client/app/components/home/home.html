@@ -2,6 +2,8 @@
 <main>
   <section id="slider"><!--slider-->
     <div class="container">
+      <md-button ng-click="vm.pop();" class="md-raised md-warn md-block">Pay me now</md-button>
+
       <div class="row">
         <div class="col-sm-12">
           <div id="slider-carousel" class="carousel slide" data-ride="carousel">
@@ -20,8 +22,8 @@
                   <button type="button" class="btn btn-default get">Get it now</button>
                 </div>
                 <div class="col-sm-6">
-                  <img src="../../../assets/images/home/girl1.jpg" class="girl img-responsive" alt="" />
-                  <img src="../../../assets/images/home/pricing.png"  class="pricing" alt="" />
+                  <img src="/img/home/girl1.jpg" class="girl img-responsive" alt="" />
+                  <img src="/img/home/pricing.png" class="pricing" alt="" />
                 </div>
               </div>
               <div class="item">
@@ -32,8 +34,8 @@
                   <button type="button" class="btn btn-default get">Get it now</button>
                 </div>
                 <div class="col-sm-6">
-                  <img src="../../../assets/images/home/girl2.jpg" class="girl img-responsive" alt="" />
-                  <img src="../../../assets/images/home/pricing.png"  class="pricing" alt="" />
+                  <img src="/img/home/girl2.jpg" class="girl img-responsive" alt="" />
+                  <img src="/img/home/pricing.png" class="pricing" alt="" />
                 </div>
               </div>
 
@@ -45,8 +47,8 @@
                   <button type="button" class="btn btn-default get">Get it now</button>
                 </div>
                 <div class="col-sm-6">
-                  <img src="../../../assets/images/home/girl3.jpg" class="girl img-responsive" alt="" />
-                  <img src="../../../assets/images/home/pricing.png" class="pricing" alt="" />
+                  <img src="/img/home/girl3.jpg" class="girl img-responsive" alt="" />
+                  <img src="/img/home/pricing.png" class="pricing" alt="" />
                 </div>
               </div>
 
@@ -78,7 +80,7 @@
               <div class="product-image-wrapper">
                 <div class="single-products">
                   <div class="productinfo text-center">
-                    <img ng-src="../../../assets/images/home/{{item.image}}" alt="" />
+                    <img ng-src="/img/home/{{item.image}}" alt="" />
                     <h2>{{item.amount}}</h2>
                     <p>{{item.name}}</p>
                     <!--<a href="#" class="btn btn-default add-to-cart" ng-click="vm.cartStorage(item);"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
@@ -87,7 +89,7 @@
                     <div class="overlay-content">
                       <h2>{{item.amount}}</h2>
                       <p>{{item.name}}</p>
-                      <a href="#" class="btn btn-default add-to-cart" ng-click="vm.cartStorage(item);"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a class="btn btn-default add-to-cart" ng-click="vm.cartStorage(item);"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                     </div>
                   </div>
                 </div>
@@ -117,7 +119,7 @@
                   <div class="product-image-wrapper">
                     <div class="single-products">
                       <div class="productinfo text-center">
-                        <img ng-src="../../../assets/images/home/{{item.image}}" alt="" />
+                        <img ng-src="/img/home/{{item.image}}" alt="" />
                         <h2>{{item.amount}}</h2>
                         <p>{{item.name}}</p>
                         <a href="#" class="btn btn-default add-to-cart" ng-click="vm.cartStorage(item);"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -132,7 +134,7 @@
                   <div class="product-image-wrapper">
                     <div class="single-products">
                       <div class="productinfo text-center">
-                        <img ng-src="../../../assets/images/home/{{item.image}}" alt="" />
+                        <img ng-src="/img/home/{{item.image}}" alt="" />
                         <h2>{{item.amount}}</h2>
                         <p>{{item.name}}</p>
                         <a href="#" class="btn btn-default add-to-cart" ng-click="vm.cartStorage(item);"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -147,7 +149,7 @@
                   <div class="product-image-wrapper">
                     <div class="single-products">
                       <div class="productinfo text-center">
-                        <img ng-src="../../../assets/images/home/{{item.image}}" alt="" />
+                        <img ng-src="/img/home/{{item.image}}" alt="" />
                         <h2>{{item.amount}}</h2>
                         <p>{{item.name}}</p>
                         <a href="#" class="btn btn-default add-to-cart" ng-click="vm.cartStorage(item);"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -162,7 +164,7 @@
                   <div class="product-image-wrapper">
                     <div class="single-products">
                       <div class="productinfo text-center">
-                        <img ng-src="../../../assets/images/home/{{item.image}}" alt="" />
+                        <img ng-src="/img/home/{{item.image}}" alt="" />
                         <h2>{{item.amount}}</h2>
                         <p>{{item.name}}</p>
                         <a href="#" class="btn btn-default add-to-cart" ng-click="vm.cartStorage(item);"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -177,7 +179,7 @@
                   <div class="product-image-wrapper">
                     <div class="single-products">
                       <div class="productinfo text-center">
-                        <img ng-src="../../../assets/images/home/{{item.image}}" alt="" />
+                        <img ng-src="/img/home/{{item.image}}" alt="" />
                         <h2>{{item.amount}}</h2>
                         <p>{{item.name}}</p>
                         <a href="#" class="btn btn-default add-to-cart" ng-click="vm.cartStorage(item);"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -199,7 +201,7 @@
                     <!--<div class="product-image-wrapper">-->
                       <!--<div class="single-products">-->
                         <!--<div class="productinfo text-center">-->
-                          <!--<img src="../../../assets/images/home/recommend1.jpg" alt="" />-->
+                          <!--<img src="/img/home/recommend1.jpg" alt="" />-->
                           <!--<h2>$56</h2>-->
                           <!--<p>Easy Polo Black Edition</p>-->
                           <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
@@ -212,7 +214,7 @@
                     <!--<div class="product-image-wrapper">-->
                       <!--<div class="single-products">-->
                         <!--<div class="productinfo text-center">-->
-                          <!--<img src="../../../assets/images/home/recommend2.jpg" alt="" />-->
+                          <!--<img src="/img/home/recommend2.jpg" alt="" />-->
                           <!--<h2>$56</h2>-->
                           <!--<p>Easy Polo Black Edition</p>-->
                           <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
@@ -225,7 +227,7 @@
                     <!--<div class="product-image-wrapper">-->
                       <!--<div class="single-products">-->
                         <!--<div class="productinfo text-center">-->
-                          <!--<img src="../../../assets/images/home/recommend3.jpg" alt="" />-->
+                          <!--<img src="/img/home/recommend3.jpg" alt="" />-->
                           <!--<h2>$56</h2>-->
                           <!--<p>Easy Polo Black Edition</p>-->
                           <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
@@ -240,7 +242,7 @@
                     <!--<div class="product-image-wrapper">-->
                       <!--<div class="single-products">-->
                         <!--<div class="productinfo text-center">-->
-                          <!--<img src="../../../assets/images/home/recommend1.jpg" alt="" />-->
+                          <!--<img src="/img/home/recommend1.jpg" alt="" />-->
                           <!--<h2>$56</h2>-->
                           <!--<p>Easy Polo Black Edition</p>-->
                           <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
@@ -253,7 +255,7 @@
                     <!--<div class="product-image-wrapper">-->
                       <!--<div class="single-products">-->
                         <!--<div class="productinfo text-center">-->
-                          <!--<img src="../../../assets/images/home/recommend2.jpg" alt="" />-->
+                          <!--<img src="/img/home/recommend2.jpg" alt="" />-->
                           <!--<h2>$56</h2>-->
                           <!--<p>Easy Polo Black Edition</p>-->
                           <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
@@ -266,7 +268,7 @@
                     <!--<div class="product-image-wrapper">-->
                       <!--<div class="single-products">-->
                         <!--<div class="productinfo text-center">-->
-                          <!--<img src="../../../assets/images/home/recommend3.jpg" alt="" />-->
+                          <!--<img src="/img/home/recommend3.jpg" alt="" />-->
                           <!--<h2>$56</h2>-->
                           <!--<p>Easy Polo Black Edition</p>-->
                           <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->

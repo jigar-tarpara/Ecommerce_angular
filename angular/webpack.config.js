@@ -1,9 +1,13 @@
-var path    = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+let path    = require('path');
+let webpack = require('webpack');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+let CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   devtool: 'source-map',
+  metadata:{
+    title:"Home | E-Shopper"
+  },
   entry: {},
   module: {
     loaders: [
@@ -17,6 +21,14 @@ module.exports = {
     // Injects bundles in your index.html instead of wiring all manually.
     // It also adds hash to all injected assets so we don't have problems
     // with cache purging during deployment.
+    new CopyWebpackPlugin([
+      {
+        from: 'client/assets/images',
+        to: 'img/'
+      }
+    ], {
+      copyUnmodified: true
+    }),
     new HtmlWebpackPlugin({
       template: 'client/index.html',
       inject: 'body',
