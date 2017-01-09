@@ -1,4 +1,4 @@
-import template from './cart.html';
+import template from './checkOut.html';
 module.exports = {
   controllerAs: 'vm',
   restrict: 'E',
